@@ -144,7 +144,7 @@ const task = t?.task;
         </p>
         <div className="mt-auto flex w-full justify-end">
           <Button
-            className="m-1 rounded-sm bg-red-600 p-1 px-2 font-semibold text-white"
+            className="m-1 rounded-sm shadow-md bg-red-600 p-1 px-2 font-semibold text-white"
             onClick={() => handleDelete(t._id)}
             type="button"
             disabled={!!deleteTask.isPending && deleting ===t._id }
@@ -153,7 +153,7 @@ const task = t?.task;
             Delete
           </Button>
           <button
-            className="m-1 rounded-sm bg-blue-300 p-1 px-2 font-semibold text-white"
+            className="m-1 rounded-sm shadow-md bg-blue-300 p-1 px-2 font-semibold text-white"
             onClick={() => {
               setSelectedTask(t);
               setShowBox("EditBox");
@@ -162,7 +162,7 @@ const task = t?.task;
             Edit
           </button>
           <button
-            className="m-1 rounded-sm bg-blue-700 p-1 px-2 font-semibold text-white"
+            className="m-1 rounded-sm shadow-md bg-blue-700 p-1 px-2 font-semibold text-white"
             onClick={() => {
               setSelectedTask(t);
               setShowBox("ViewBox");

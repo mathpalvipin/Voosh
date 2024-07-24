@@ -134,8 +134,7 @@ router.delete("/logout", (req, res) => {
     res.cookie(
       "userToken",
       "",
-      { expires: new Date(0) },
-      { httpOnly: true, secure: true, sameSite: "None" }
+      { expires: new Date(0), httpOnly: true, secure: true, sameSite: "None" }
     );
 
     res.status(200).send({ message: "User Logged out successfully" });
