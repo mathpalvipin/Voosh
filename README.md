@@ -38,41 +38,33 @@ This web application is designed to manage tasks and features a responsive desig
 
 1. Clone the repository from GitHub:
 
-   ```sh
+   ```
    git clone https://github.com/your-username/your-repository.git
    ```
 
 2.Navigate to the project directory:
 
-```sh
+```
 cd your-repository
 ```
 3.Backend Setup
 Navigate to the server directory:
 ```
-sh
 cd backend
 ```
 4.Install backend dependencies:
 ```
-sh
 npm install
 ```
-
 5.Create a .env file in the server directory with the following environment variables:
-
 ```
-PORT=5000
-MONGO_URI=your-mongodb-uri
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-JWT_SECRET=your-jwt-secret
+SECRET_KEY="koikoi"
+MONGODB_URI=""
+FRONTEND_URL="http://localhost:3000"
 ```
-
 6.Start the backend server:
-```
 
-```sh
+```
 npm start
 ```
 
@@ -80,26 +72,28 @@ npm start
 
 1.Navigate to the client directory:
 
-```sh
+```
 cd frontend
 ```
 
 2.Install frontend dependencies:
 
-```sh
+```
 npm install
 ```
 
 3.Create a .env file in the client directory with the following environment variables (if needed):
 
 ```
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_BACKENDURL="http://localhost:5000"
+REACT_APP_GOOGLEID=""
+
 ```
 
 4.Start the frontend development server:
 
-```sh
-npm start
+```
+npm statt
 ```
 Running the Application Locally
 Ensure you have a connection to a MongoDB Atlas cluster.
