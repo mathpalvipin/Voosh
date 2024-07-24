@@ -228,7 +228,7 @@ const task = t?.task;
         onDragEnd={onDragEnd}
         // modifiers={[restrictToVerticalAxis]}
       >
-        <div className="mt-4 flex h-screen">
+        <div className="mt-4 flex h-screen flex-col md:flex-row ">
           {["todo", "inProgress", "done"].map((status) => (
             <DroppableColumn key={status} status={status}>
               <SortableContext

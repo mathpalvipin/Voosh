@@ -108,6 +108,8 @@ const IntroPage = () => {
             <ul>
               <li style={listItemStyle}>Create, edit, and delete tasks.</li>
               <li style={listItemStyle}>Drag drop task in TODO , inProgress , Done</li>
+            <strong style={listItemStrongStyle}>Google Oauth</strong>:
+              <li style={listItemStyle}>Google Login </li>
              
             </ul>
           </li>
